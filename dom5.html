@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+      <style type="test/css">
+          h1 {color:blue;}
+        h2 {color:red;}
+        p {color:green;}
+
+          #div1 { background-color: red; }
+          .test{
+              color: green;
+          }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <p id="p1" class="test">This is a paragraph.</p>
+   <p id="p2" style="color: red;font-size: 15px ;font:italic bold 1.5em/2 arial;">This is another paragraph.</p>
+</div>
+
+<h1> h1 heading...........</h1>
+<script>
+    var para = document.createElement("p");
+    var node = document.createTextNode("This is new.");
+    para.appendChild(node);
+
+    var element = document.getElementById("div1");
+    element.appendChild(para);
+</script>
+</body>
+</html>
