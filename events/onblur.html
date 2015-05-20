@@ -1,0 +1,21 @@
+<HTML>
+<TITLE>Example of onBlur Event Handler</TITLE>
+<HEAD>
+    <SCRIPT LANGUAGE="JavaScript">
+        function valid(form){
+            var input=0;
+            input=document.myform.data.value;
+            if (input<0){
+                alert("Please input a value that is less than 0");
+            }
+        }
+    </SCRIPT>
+</HEAD>
+<BODY>
+<H3> Example of onBlur Event Handler</H3>
+Try inputting a value less than zero:<br>
+<form name="myform">
+    <input type="text" name="data" value="" size=10 onBlur="valid(this.form)">
+</form>
+</BODY>
+</HTML>

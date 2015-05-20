@@ -1,0 +1,20 @@
+<HTML>
+<TITLE>Example of onClick Event Handler</TITLE>
+<HEAD>
+    <SCRIPT LANGUAGE="JavaScript">
+        function valid(){
+            var input=0;
+            input=document.myform.data.value;
+            alert("Hello " + input + " ! Welcome...");
+        }
+    </SCRIPT>
+</HEAD>
+<BODY>
+<H3> Example of onClick Event Handler </H3>
+Click on the button after inputting your name into the text box:<br>
+<form name="myform">
+    <input type="text" name="data" value="" size=10>
+    <INPUT TYPE="button" VALUE="Click Here" onClick="valid()">
+</form>
+</BODY>
+</HTML>
